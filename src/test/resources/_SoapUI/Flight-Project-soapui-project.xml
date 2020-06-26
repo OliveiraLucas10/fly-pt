@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="8d1f9e24-d1c8-4a22-bca0-c37888a69437" activeEnvironment="Default" name="Flight Project" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:restMockService id="fbc0e204-5cb9-40b5-82b8-16438db7dc84" port="9800" path="/" host="pop-os" name="REST MockService"><con:settings/><con:properties/><con:restMockAction name="/flightSucess" method="GET" resourcePath="/flightSucess" id="318a8645-9eb7-47ad-b324-d2501c5c913d"><con:settings/><con:defaultResponse>sucess</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath/><con:response name="sucess" id="0dbfe876-43a0-4606-8f24-10cb693d2267" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent><![CDATA[{
+	"search_id": "d8c0ff6f-cfbe-44b1-9fbf-b92088d8575a",
+	"data": [
+		{
+			"id": "093e032d4836000035362025_0|032d03584836000033d05ebb_0",
+			"dTime": 1597214100,
+			"dTimeUTC": 1597210500,
+			"aTime": 1597264200,
+			"aTimeUTC": 1597260600,
+			"nightsInDest": null,
+			"duration": {
+				"departure": 50100,
+				"return": 0,
+				"total": 50100
+			},
+			"fly_duration": "13h 55m",
+			"flyFrom": "OPO",
+			"cityFrom": "Porto",
+			"cityCodeFrom": "OPO",
+			"countryFrom": {
+				"code": "PT",
+				"name": "Portugal"
+			},
+			"mapIdfrom": "porto_pt",
+			"flyTo": "LIS",
+			"cityTo": "Lisbon",
+			"cityCodeTo": "LIS",
+			"countryTo": {
+				"code": "PT",
+				"name": "Portugal"
+			},
+			"mapIdto": "lisbon_pt",
+			"distance": 276.74,
+			"routes": [
+				[
+					"OPO",
+					"LIS"
+				]
+			],
+			"airlines": [
+				"FR"
+			],
+			"pnr_count": 2,
+			"has_airport_change": false,
+			"technical_stops": 0,
+			"price": 39,
+			"bags_price": {
+				"1": 103.92,
+				"2": 207.84
+			},
+			"baglimit": {
+				"hand_width": 20,
+				"hand_height": 40,
+				"hand_length": 55,
+				"hand_weight": 10,
+				"hold_width": 81,
+				"hold_height": 119,
+				"hold_length": 119,
+				"hold_dimensions_sum": 319,
+				"hold_weight": 20
+			},
+			"availability": {
+				"seats": 8
+			},
+			"facilitated_booking_available": false,
+			"conversion": {
+				"EUR": 39
+			},
+			"quality": 162.333025,
+			"booking_token": "AqE5eref96m57TChYMMpMEpf9N-wnntJ68MeeEXAXUBJpYXmC6dj8bF-9vc0xYGXnWn7Xm7PMr9LGE7CAYS6Dejv561CTB3TugYIus2uc0YIlgTTgzLig2sCx8iX_WY60SZ-UDHZRvuNyFNptSRsoJM04lDiO7L3-gmvfPlWMfEaPT8IrHmsRTHbLVytfJvFZJiecMi2WB3KH5OZ3-3x02QY0vPajbMXMpIoHUuUUNFpMMmPpfAvLtkE4dCb-34A3ka8rZXGHv0tKxJpo1bbjJOwkT3i3RKrNbbWhOH7pRgkeLY4YiMyLrsFnVrrzyolNPAkUhqhro8r0UHLaX61CcEMAFCqfph1Sb7RYl8BeD4bcy4goB1-ytIBr4--ahVywZRDwmV-XXiUMlG3o_mKieHr_fgf2U0s_UU71pTNmTz38Rr-CL97etT704HmFXZXOvlu564PdXxT-_WKYjNuJ3RAcTp81TUjj1Az5qthesmaC5iFi0eFEqOaMA-3LrpFh1M5EPPFDSEzK4RgJ2OcuWNsuVK8jfvOCM4dNFWRO2mqOmvpX8kC01mWE2AQvwIWoqX48HfAj1kHe24a3c50ymMwdg51Uva75ZpgHZRdldHOpNvv4yhC8zM5Fy1YkNzcA",
+			"deep_link": "https:\/\/www.kiwi.com\/deep?from=OPO&to=LIS&departure=12-08-2020&flightsId=093e032d4836000035362025_0%7C032d03584836000033d05ebb_0&price=39&passengers=1&affilid=picky&lang=en&currency=EUR&booking_token=AqE5eref96m57TChYMMpMEpf9N-wnntJ68MeeEXAXUBJpYXmC6dj8bF-9vc0xYGXnWn7Xm7PMr9LGE7CAYS6Dejv561CTB3TugYIus2uc0YIlgTTgzLig2sCx8iX_WY60SZ-UDHZRvuNyFNptSRsoJM04lDiO7L3-gmvfPlWMfEaPT8IrHmsRTHbLVytfJvFZJiecMi2WB3KH5OZ3-3x02QY0vPajbMXMpIoHUuUUNFpMMmPpfAvLtkE4dCb-34A3ka8rZXGHv0tKxJpo1bbjJOwkT3i3RKrNbbWhOH7pRgkeLY4YiMyLrsFnVrrzyolNPAkUhqhro8r0UHLaX61CcEMAFCqfph1Sb7RYl8BeD4bcy4goB1-ytIBr4--ahVywZRDwmV-XXiUMlG3o_mKieHr_fgf2U0s_UU71pTNmTz38Rr-CL97etT704HmFXZXOvlu564PdXxT-_WKYjNuJ3RAcTp81TUjj1Az5qthesmaC5iFi0eFEqOaMA-3LrpFh1M5EPPFDSEzK4RgJ2OcuWNsuVK8jfvOCM4dNFWRO2mqOmvpX8kC01mWE2AQvwIWoqX48HfAj1kHe24a3c50ymMwdg51Uva75ZpgHZRdldHOpNvv4yhC8zM5Fy1YkNzcA",
+			"tracking_pixel": null,
+			"p1": 1,
+			"p2": 1,
+			"p3": 1,
+			"transfers": [],
+			"type_flights": [
+				"deprecated"
+			],
+			"virtual_interlining": true,
+			"found_on": [
+				"deprecated"
+			],
+			"route": [
+				{
+					"fare_basis": "",
+					"fare_category": "M",
+					"fare_classes": "",
+					"price": 1,
+					"fare_family": "",
+					"found_on": "deprecated",
+					"last_seen": 1592332227,
+					"refresh_timestamp": 1592332227,
+					"source": "deprecated",
+					"return": 0,
+					"bags_recheck_required": false,
+					"guarantee": false,
+					"id": "093e032d4836000035362025_0",
+					"combination_id": "093e032d4836000035362025",
+					"original_return": 0,
+					"aTime": 1597222800,
+					"dTime": 1597214100,
+					"aTimeUTC": 1597219200,
+					"dTimeUTC": 1597210500,
+					"mapIdfrom": "porto_pt",
+					"mapIdto": "london_gb",
+					"cityTo": "London",
+					"cityFrom": "Porto",
+					"cityCodeFrom": "OPO",
+					"cityCodeTo": "LON",
+					"flyTo": "STN",
+					"flyFrom": "OPO",
+					"airline": "FR",
+					"operating_carrier": "",
+					"equipment": null,
+					"latFrom": 41.2355556,
+					"lngFrom": -8.6780556,
+					"latTo": 51.885,
+					"lngTo": 0.235,
+					"flight_no": 8344,
+					"vehicle_type": "aircraft",
+					"operating_flight_no": ""
+				},
+				{
+					"fare_basis": "",
+					"fare_category": "M",
+					"fare_classes": "",
+					"price": 1,
+					"fare_family": "",
+					"found_on": "deprecated",
+					"last_seen": 1592331218,
+					"refresh_timestamp": 1592331218,
+					"source": "deprecated",
+					"return": 0,
+					"bags_recheck_required": true,
+					"guarantee": true,
+					"id": "032d03584836000033d05ebb_0",
+					"combination_id": "032d03584836000033d05ebb",
+					"original_return": 0,
+					"aTime": 1597264200,
+					"dTime": 1597254000,
+					"aTimeUTC": 1597260600,
+					"dTimeUTC": 1597250400,
+					"mapIdfrom": "london_gb",
+					"mapIdto": "lisbon_pt",
+					"cityTo": "Lisbon",
+					"cityFrom": "London",
+					"cityCodeFrom": "LON",
+					"cityCodeTo": "LIS",
+					"flyTo": "LIS",
+					"flyFrom": "STN",
+					"airline": "FR",
+					"operating_carrier": "FR",
+					"equipment": null,
+					"latFrom": 51.885,
+					"lngFrom": 0.235,
+					"latTo": 38.7741667,
+					"lngTo": -9.1341667,
+					"flight_no": 1882,
+					"vehicle_type": "aircraft",
+					"operating_flight_no": "1882"
+				}
+			]
+		},
+		{
+			"id": "093e032d483700009f1e5679_0|032d035848380000655589b5_0",
+			"dTime": 1597341900,
+			"dTimeUTC": 1597338300,
+			"aTime": 1597437000,
+			"aTimeUTC": 1597433400,
+			"nightsInDest": null,
+			"duration": {
+				"departure": 95100,
+				"return": 0,
+				"total": 95100
+			},
+			"fly_duration": "26h 25m",
+			"flyFrom": "OPO",
+			"cityFrom": "Porto",
+			"cityCodeFrom": "OPO",
+			"countryFrom": {
+				"code": "PT",
+				"name": "Portugal"
+			},
+			"mapIdfrom": "porto_pt",
+			"flyTo": "LIS",
+			"cityTo": "Lisbon",
+			"cityCodeTo": "LIS",
+			"countryTo": {
+				"code": "PT",
+				"name": "Portugal"
+			},
+			"mapIdto": "lisbon_pt",
+			"distance": 276.74,
+			"routes": [
+				[
+					"OPO",
+					"LIS"
+				]
+			],
+			"airlines": [
+				"FR"
+			],
+			"pnr_count": 2,
+			"has_airport_change": false,
+			"technical_stops": 0,
+			"price": 39,
+			"bags_price": {
+				"1": 103.71,
+				"2": 207.42
+			},
+			"baglimit": {
+				"hand_width": 20,
+				"hand_height": 40,
+				"hand_length": 55,
+				"hand_weight": 10,
+				"hold_width": 81,
+				"hold_height": 119,
+				"hold_length": 119,
+				"hold_dimensions_sum": 319,
+				"hold_weight": 20
+			},
+			"availability": {
+				"seats": 5
+			},
+			"facilitated_booking_available": false,
+			"conversion": {
+				"EUR": 39
+			},
+			"quality": 262.332775,
+			"booking_token": "AZGn8_rSW5uHhDbAgBVUU7SMfXjRfCu_KCtm33AxU5juuhSq69MKJ05sahWhjvZ95yXPmTSBL8ZZKwJnB9krH79tARM4JQv04DMvDmfh_mGWmhgHxChBTLInmn17ndLmhtYvQfQlJZfAhW4ySpyUaK7LTtJhOqoRvk6rnNK48uSERR0iWsk9_6L0Mw8HI8VipsFe_9B6-Jz2E9e6rDSeKMRZV_GVAW7Mpq8TGn1ef4VbetYurIf4WlKFw9LQasC2JZs3YBHTq2K4ey-Ij5mrX5aOW9GpFFVqhLpxXCtCTun3nbWe7I_VtItK1VoJoOUgqewZzYoTiql7HiwFcQGfxD-jBIECO1MQKSU2omW0rUO09dotTNO7Z3vTEemTRRsKjcP83qy3wikUQoYG4a46oIY6IdT2Fe4Rh5qCa7MkYgnmpohU8GfUKjvIlQASIUcjyGQT8v5IBtr9AtbYarkRKbWaU5haK-JQpiA2M5A1qXTwLEQbUb-AIqPlw6PuMdAODaqQB9lLDMScXBtkjgxXMTR1aVHEAViWL5R1fe4jSOjGe0AWJJp-liEeiIxEgF93tdpZMUXz9msgm8DYjNuEgvwBFX88ZYy6mGqH0ckgAlVArOOc7dM0Pd8aUm-Q-OyHb",
+			"deep_link": "https:\/\/www.kiwi.com\/deep?from=OPO&to=LIS&departure=13-08-2020&flightsId=093e032d483700009f1e5679_0%7C032d035848380000655589b5_0&price=39&passengers=1&affilid=picky&lang=en&currency=EUR&booking_token=AZGn8_rSW5uHhDbAgBVUU7SMfXjRfCu_KCtm33AxU5juuhSq69MKJ05sahWhjvZ95yXPmTSBL8ZZKwJnB9krH79tARM4JQv04DMvDmfh_mGWmhgHxChBTLInmn17ndLmhtYvQfQlJZfAhW4ySpyUaK7LTtJhOqoRvk6rnNK48uSERR0iWsk9_6L0Mw8HI8VipsFe_9B6-Jz2E9e6rDSeKMRZV_GVAW7Mpq8TGn1ef4VbetYurIf4WlKFw9LQasC2JZs3YBHTq2K4ey-Ij5mrX5aOW9GpFFVqhLpxXCtCTun3nbWe7I_VtItK1VoJoOUgqewZzYoTiql7HiwFcQGfxD-jBIECO1MQKSU2omW0rUO09dotTNO7Z3vTEemTRRsKjcP83qy3wikUQoYG4a46oIY6IdT2Fe4Rh5qCa7MkYgnmpohU8GfUKjvIlQASIUcjyGQT8v5IBtr9AtbYarkRKbWaU5haK-JQpiA2M5A1qXTwLEQbUb-AIqPlw6PuMdAODaqQB9lLDMScXBtkjgxXMTR1aVHEAViWL5R1fe4jSOjGe0AWJJp-liEeiIxEgF93tdpZMUXz9msgm8DYjNuEgvwBFX88ZYy6mGqH0ckgAlVArOOc7dM0Pd8aUm-Q-OyHb",
+			"tracking_pixel": null,
+			"p1": 1,
+			"p2": 1,
+			"p3": 1,
+			"transfers": [],
+			"type_flights": [
+				"deprecated"
+			],
+			"virtual_interlining": true,
+			"found_on": [
+				"deprecated"
+			],
+			"route": [
+				{
+					"fare_basis": "",
+					"fare_category": "M",
+					"fare_classes": "",
+					"price": 1,
+					"fare_family": "",
+					"found_on": "deprecated",
+					"last_seen": 1592332227,
+					"refresh_timestamp": 1592332227,
+					"source": "deprecated",
+					"return": 0,
+					"bags_recheck_required": false,
+					"guarantee": false,
+					"id": "093e032d483700009f1e5679_0",
+					"combination_id": "093e032d483700009f1e5679",
+					"original_return": 0,
+					"aTime": 1597350600,
+					"dTime": 1597341900,
+					"aTimeUTC": 1597347000,
+					"dTimeUTC": 1597338300,
+					"mapIdfrom": "porto_pt",
+					"mapIdto": "london_gb",
+					"cityTo": "London",
+					"cityFrom": "Porto",
+					"cityCodeFrom": "OPO",
+					"cityCodeTo": "LON",
+					"flyTo": "STN",
+					"flyFrom": "OPO",
+					"airline": "FR",
+					"operating_carrier": "",
+					"equipment": null,
+					"latFrom": 41.2355556,
+					"lngFrom": -8.6780556,
+					"latTo": 51.885,
+					"lngTo": 0.235,
+					"flight_no": 8348,
+					"vehicle_type": "aircraft",
+					"operating_flight_no": ""
+				},
+				{
+					"fare_basis": "",
+					"fare_category": "M",
+					"fare_classes": "",
+					"price": 1,
+					"fare_family": "",
+					"found_on": "deprecated",
+					"last_seen": 1592334923,
+					"refresh_timestamp": 1592334923,
+					"source": "deprecated",
+					"return": 0,
+					"bags_recheck_required": true,
+					"guarantee": true,
+					"id": "032d035848380000655589b5_0",
+					"combination_id": "032d035848380000655589b5",
+					"original_return": 0,
+					"aTime": 1597437000,
+					"dTime": 1597426800,
+					"aTimeUTC": 1597433400,
+					"dTimeUTC": 1597423200,
+					"mapIdfrom": "london_gb",
+					"mapIdto": "lisbon_pt",
+					"cityTo": "Lisbon",
+					"cityFrom": "London",
+					"cityCodeFrom": "LON",
+					"cityCodeTo": "LIS",
+					"flyTo": "LIS",
+					"flyFrom": "STN",
+					"airline": "FR",
+					"operating_carrier": "FR",
+					"equipment": null,
+					"latFrom": 51.885,
+					"lngFrom": 0.235,
+					"latTo": 38.7741667,
+					"lngTo": -9.1341667,
+					"flight_no": 1882,
+					"vehicle_type": "aircraft",
+					"operating_flight_no": "1882"
+				}
+			]
+		},
+		{
+			"id": "093e032d4838000063b3f72b_0|032d035848380000655589b5_0",
+			"dTime": 1597386900,
+			"dTimeUTC": 1597383300,
+			"aTime": 1597437000,
+			"aTimeUTC": 1597433400,
+			"nightsInDest": null,
+			"duration": {
+				"departure": 50100,
+				"return": 0,
+				"total": 50100
+			},
+			"fly_duration": "13h 55m",
+			"flyFrom": "OPO",
+			"cityFrom": "Porto",
+			"cityCodeFrom": "OPO",
+			"countryFrom": {
+				"code": "PT",
+				"name": "Portugal"
+			},
+			"mapIdfrom": "porto_pt",
+			"flyTo": "LIS",
+			"cityTo": "Lisbon",
+			"cityCodeTo": "LIS",
+			"countryTo": {
+				"code": "PT",
+				"name": "Portugal"
+			},
+			"mapIdto": "lisbon_pt",
+			"distance": 276.74,
+			"routes": [
+				[
+					"OPO",
+					"LIS"
+				]
+			],
+			"airlines": [
+				"FR"
+			],
+			"pnr_count": 2,
+			"has_airport_change": false,
+			"technical_stops": 0,
+			"price": 43,
+			"bags_price": {
+				"1": 103.71,
+				"2": 207.42
+			},
+			"baglimit": {
+				"hand_width": 20,
+				"hand_height": 40,
+				"hand_length": 55,
+				"hand_weight": 10,
+				"hold_width": 81,
+				"hold_height": 119,
+				"hold_length": 119,
+				"hold_dimensions_sum": 319,
+				"hold_weight": 20
+			},
+			"availability": {
+				"seats": 5
+			},
+			"facilitated_booking_available": false,
+			"conversion": {
+				"EUR": 43
+			},
+			"quality": 166.333025,
+			"booking_token": "AD966uaMH4AzBKh_lB6WaRJW0qQS5HYO-u6hh8vwtMQmwYqgDFCUNhQ5dYjiHjFbche0fOsQqEMan1nD7jDPOrcdcyWcEpXPM4x-NiAytY3tJqyEdkxCYGho3q3eZ5OM0f_T6OYXZLpFO9GN7yWL76w0h-WZCLwlsAwsSTl_TaT2RnHoJELqIrXlApDnSFpsgbq2uUrVPCmC0Viw-K67hCE7yMHNFKV3hXgwT_yKovKfhuUAFgChJILk59IxX9CMViZozsMp0QHBErfDQkk-XfYe9tjqDDYgIX26iWZx2CIwx8Hwkf2qfLBb9gKVt6xpQWBpzJpC3W-wgLJ4adBdQKhOgvH_RYhBrZ3-lBqsUTGZFA1AuwvA-n0VQ7Q3lLE50GJqNNEDzHuuvwF5CL5CVcRmfFKoFaGgpJXHcRN139s1VOhJ6GmHNos5STpqamLjuW8KcUm0-Ri8-8XNjdTJUO5OG1QXcMn2GJTScBTOY8zBTf6Xt5ANdfxJ-VSK204Ws2ipPHJoW-xKMrrEjz-zRDjQOFHyX6REi3MCi0ltZvFaJdpTOJ3tjstOqe7sf3fuTYGKMd70OVrohqLtLpJfTWs3pnzzZMaqapjVQ2kqshSeyDQGn0HD3CaSWQTVsiU6ocO6URkoxore47s-bRkjWuQ==",
+			"deep_link": "https:\/\/www.kiwi.com\/deep?from=OPO&to=LIS&departure=14-08-2020&flightsId=093e032d4838000063b3f72b_0%7C032d035848380000655589b5_0&price=43&passengers=1&affilid=picky&lang=en&currency=EUR&booking_token=AD966uaMH4AzBKh_lB6WaRJW0qQS5HYO-u6hh8vwtMQmwYqgDFCUNhQ5dYjiHjFbche0fOsQqEMan1nD7jDPOrcdcyWcEpXPM4x-NiAytY3tJqyEdkxCYGho3q3eZ5OM0f_T6OYXZLpFO9GN7yWL76w0h-WZCLwlsAwsSTl_TaT2RnHoJELqIrXlApDnSFpsgbq2uUrVPCmC0Viw-K67hCE7yMHNFKV3hXgwT_yKovKfhuUAFgChJILk59IxX9CMViZozsMp0QHBErfDQkk-XfYe9tjqDDYgIX26iWZx2CIwx8Hwkf2qfLBb9gKVt6xpQWBpzJpC3W-wgLJ4adBdQKhOgvH_RYhBrZ3-lBqsUTGZFA1AuwvA-n0VQ7Q3lLE50GJqNNEDzHuuvwF5CL5CVcRmfFKoFaGgpJXHcRN139s1VOhJ6GmHNos5STpqamLjuW8KcUm0-Ri8-8XNjdTJUO5OG1QXcMn2GJTScBTOY8zBTf6Xt5ANdfxJ-VSK204Ws2ipPHJoW-xKMrrEjz-zRDjQOFHyX6REi3MCi0ltZvFaJdpTOJ3tjstOqe7sf3fuTYGKMd70OVrohqLtLpJfTWs3pnzzZMaqapjVQ2kqshSeyDQGn0HD3CaSWQTVsiU6ocO6URkoxore47s-bRkjWuQ==",
+			"tracking_pixel": null,
+			"p1": 1,
+			"p2": 1,
+			"p3": 1,
+			"transfers": [],
+			"type_flights": [
+				"deprecated"
+			],
+			"virtual_interlining": true,
+			"found_on": [
+				"deprecated"
+			],
+			"route": [
+				{
+					"fare_basis": "",
+					"fare_category": "M",
+					"fare_classes": "",
+					"price": 1,
+					"fare_family": "",
+					"found_on": "deprecated",
+					"last_seen": 1592341657,
+					"refresh_timestamp": 1592341657,
+					"source": "deprecated",
+					"return": 0,
+					"bags_recheck_required": false,
+					"guarantee": false,
+					"id": "093e032d4838000063b3f72b_0",
+					"combination_id": "093e032d4838000063b3f72b",
+					"original_return": 0,
+					"aTime": 1597395600,
+					"dTime": 1597386900,
+					"aTimeUTC": 1597392000,
+					"dTimeUTC": 1597383300,
+					"mapIdfrom": "porto_pt",
+					"mapIdto": "london_gb",
+					"cityTo": "London",
+					"cityFrom": "Porto",
+					"cityCodeFrom": "OPO",
+					"cityCodeTo": "LON",
+					"flyTo": "STN",
+					"flyFrom": "OPO",
+					"airline": "FR",
+					"operating_carrier": "",
+					"equipment": null,
+					"latFrom": 41.2355556,
+					"lngFrom": -8.6780556,
+					"latTo": 51.885,
+					"lngTo": 0.235,
+					"flight_no": 8344,
+					"vehicle_type": "aircraft",
+					"operating_flight_no": ""
+				},
+				{
+					"fare_basis": "",
+					"fare_category": "M",
+					"fare_classes": "",
+					"price": 1,
+					"fare_family": "",
+					"found_on": "deprecated",
+					"last_seen": 1592334923,
+					"refresh_timestamp": 1592334923,
+					"source": "deprecated",
+					"return": 0,
+					"bags_recheck_required": true,
+					"guarantee": true,
+					"id": "032d035848380000655589b5_0",
+					"combination_id": "032d035848380000655589b5",
+					"original_return": 0,
+					"aTime": 1597437000,
+					"dTime": 1597426800,
+					"aTimeUTC": 1597433400,
+					"dTimeUTC": 1597423200,
+					"mapIdfrom": "london_gb",
+					"mapIdto": "lisbon_pt",
+					"cityTo": "Lisbon",
+					"cityFrom": "London",
+					"cityCodeFrom": "LON",
+					"cityCodeTo": "LIS",
+					"flyTo": "LIS",
+					"flyFrom": "STN",
+					"airline": "FR",
+					"operating_carrier": "FR",
+					"equipment": null,
+					"latFrom": 51.885,
+					"lngFrom": 0.235,
+					"latTo": 38.7741667,
+					"lngTo": -9.1341667,
+					"flight_no": 1882,
+					"vehicle_type": "aircraft",
+					"operating_flight_no": "1882"
+				}
+			]
+		},
+		{
+			"id": "093e255848370000d8d29cba_0|2558035848380000fc7217ac_0",
+			"dTime": 1597299900,
+			"dTimeUTC": 1597296300,
+			"aTime": 1597397400,
+			"aTimeUTC": 1597393800,
+			"nightsInDest": null,
+			"duration": {
+				"departure": 97500,
+				"return": 0,
+				"total": 97500
+			},
+			"fly_duration": "27h 5m",
+			"flyFrom": "OPO",
+			"cityFrom": "Porto",
+			"cityCodeFrom": "OPO",
+			"countryFrom": {
+				"code": "PT",
+				"name": "Portugal"
+			},
+			"mapIdfrom": "porto_pt",
+			"flyTo": "LIS",
+			"cityTo": "Lisbon",
+			"cityCodeTo": "LIS",
+			"countryTo": {
+				"code": "PT",
+				"name": "Portugal"
+			},
+			"mapIdto": "lisbon_pt",
+			"distance": 276.74,
+			"routes": [
+				[
+					"OPO",
+					"LIS"
+				]
+			],
+			"airlines": [
+				"FR"
+			],
+			"pnr_count": 2,
+			"has_airport_change": false,
+			"technical_stops": 0,
+			"price": 45,
+			"bags_price": {
+				"1": 63.0,
+				"2": 126.0
+			},
+			"baglimit": {
+				"hand_width": 20,
+				"hand_height": 40,
+				"hand_length": 55,
+				"hand_weight": 10,
+				"hold_width": 81,
+				"hold_height": 119,
+				"hold_length": 119,
+				"hold_dimensions_sum": 319,
+				"hold_weight": 20
+			},
+			"availability": {
+				"seats": 4
+			},
+			"facilitated_booking_available": false,
+			"conversion": {
+				"EUR": 45
+			},
+			"quality": 273.666095,
+			"booking_token": "AquUq3a6LyfIQx-N0espFt51bx-G3wwgkSyM2SD-A7Af1scrTm4sMwJXJqn5BdB75quVGZJFK9kfeA4BR11ms-YhFxA1hmsxWOqycRXDnUDNTz28tXQTcqCmd2hfGk9202rJZIaRu4c8uWDjOnyzGLJXD4aSsFeQmnirbzRl1gVI1BR4JRab-fwpMmjIxLgrmmCtz5H6h_LvqSD089iy4pyZ20GF7FntYbp4L1vWDFPscNnXlJxAlBO7U2DJUmLrmy4Fu8AJz6ZR1BwvucwbtGyo18kfre8LM9uzLc6bhAHIQ6FW-NldVC8lazU9kEqJMG5yLJi7hT_SNq-nSB0-W6Sd0-HivSfqAwR3ha6eznsT5IQkNSWSUQFMS2gc1hKceEwc6iYR5W88UP6iwhxBch4IwjzPbDqlJXUwiQHGUaxPNv86eb0lqGL5S3FPGQss-DctCZuJHmd7l61k0hm2TqNaT7qG5x3tjic0fVeWQQUb-4IZqUYjeHTAcTQcb_gLW0cAWxwuqCjzjIfZ0yUFMv3S5BjxifqwcQkkbo1ozyvUzbsgoeu6xf3qMcAp2dFwQyjTjnVZCMz58vIioa0s4x-L4YzjKnhsmNdS2hZTgLEqlGkjk1C8yfnPkfcoIMP3fCKUC-QN34WvXV_k76eNUzw==",
+			"deep_link": "https:\/\/www.kiwi.com\/deep?from=OPO&to=LIS&departure=13-08-2020&flightsId=093e255848370000d8d29cba_0%7C2558035848380000fc7217ac_0&price=45&passengers=1&affilid=picky&lang=en&currency=EUR&booking_token=AquUq3a6LyfIQx-N0espFt51bx-G3wwgkSyM2SD-A7Af1scrTm4sMwJXJqn5BdB75quVGZJFK9kfeA4BR11ms-YhFxA1hmsxWOqycRXDnUDNTz28tXQTcqCmd2hfGk9202rJZIaRu4c8uWDjOnyzGLJXD4aSsFeQmnirbzRl1gVI1BR4JRab-fwpMmjIxLgrmmCtz5H6h_LvqSD089iy4pyZ20GF7FntYbp4L1vWDFPscNnXlJxAlBO7U2DJUmLrmy4Fu8AJz6ZR1BwvucwbtGyo18kfre8LM9uzLc6bhAHIQ6FW-NldVC8lazU9kEqJMG5yLJi7hT_SNq-nSB0-W6Sd0-HivSfqAwR3ha6eznsT5IQkNSWSUQFMS2gc1hKceEwc6iYR5W88UP6iwhxBch4IwjzPbDqlJXUwiQHGUaxPNv86eb0lqGL5S3FPGQss-DctCZuJHmd7l61k0hm2TqNaT7qG5x3tjic0fVeWQQUb-4IZqUYjeHTAcTQcb_gLW0cAWxwuqCjzjIfZ0yUFMv3S5BjxifqwcQkkbo1ozyvUzbsgoeu6xf3qMcAp2dFwQyjTjnVZCMz58vIioa0s4x-L4YzjKnhsmNdS2hZTgLEqlGkjk1C8yfnPkfcoIMP3fCKUC-QN34WvXV_k76eNUzw==",
+			"tracking_pixel": null,
+			"p1": 1,
+			"p2": 1,
+			"p3": 1,
+			"transfers": [],
+			"type_flights": [
+				"deprecated"
+			],
+			"virtual_interlining": true,
+			"found_on": [
+				"deprecated"
+			],
+			"route": [
+				{
+					"fare_basis": "",
+					"fare_category": "M",
+					"fare_classes": "",
+					"price": 1,
+					"fare_family": "",
+					"found_on": "deprecated",
+					"last_seen": 1592330987,
+					"refresh_timestamp": 1592330987,
+					"source": "deprecated",
+					"return": 0,
+					"bags_recheck_required": false,
+					"guarantee": false,
+					"id": "093e255848370000d8d29cba_0",
+					"combination_id": "093e255848370000d8d29cba",
+					"original_return": 0,
+					"aTime": 1597312500,
+					"dTime": 1597299900,
+					"aTimeUTC": 1597305300,
+					"dTimeUTC": 1597296300,
+					"mapIdfrom": "porto_pt",
+					"mapIdto": "milan_it",
+					"cityTo": "Milan",
+					"cityFrom": "Porto",
+					"cityCodeFrom": "OPO",
+					"cityCodeTo": "MIL",
+					"flyTo": "BGY",
+					"flyFrom": "OPO",
+					"airline": "FR",
+					"operating_carrier": "",
+					"equipment": null,
+					"latFrom": 41.2355556,
+					"lngFrom": -8.6780556,
+					"latTo": 45.6688889,
+					"lngTo": 9.70027778,
+					"flight_no": 4703,
+					"vehicle_type": "aircraft",
+					"operating_flight_no": ""
+				},
+				{
+					"fare_basis": "",
+					"fare_category": "M",
+					"fare_classes": "",
+					"price": 1,
+					"fare_family": "",
+					"found_on": "deprecated",
+					"last_seen": 1592342328,
+					"refresh_timestamp": 1592342328,
+					"source": "deprecated",
+					"return": 0,
+					"bags_recheck_required": true,
+					"guarantee": true,
+					"id": "2558035848380000fc7217ac_0",
+					"combination_id": "2558035848380000fc7217ac",
+					"original_return": 0,
+					"aTime": 1597397400,
+					"dTime": 1597390500,
+					"aTimeUTC": 1597393800,
+					"dTimeUTC": 1597383300,
+					"mapIdfrom": "milan_it",
+					"mapIdto": "lisbon_pt",
+					"cityTo": "Lisbon",
+					"cityFrom": "Milan",
+					"cityCodeFrom": "MIL",
+					"cityCodeTo": "LIS",
+					"flyTo": "LIS",
+					"flyFrom": "BGY",
+					"airline": "FR",
+					"operating_carrier": "FR",
+					"equipment": "738",
+					"latFrom": 45.6688889,
+					"lngFrom": 9.70027778,
+					"latTo": 38.7741667,
+					"lngTo": -9.1341667,
+					"flight_no": 2087,
+					"vehicle_type": "aircraft",
+					"operating_flight_no": "2087"
+				}
+			]
+		},
+		{
+			"id": "093e0358483d0000f61edeac_0",
+			"dTime": 1597864500,
+			"dTimeUTC": 1597860900,
+			"aTime": 1597868100,
+			"aTimeUTC": 1597864500,
+			"nightsInDest": null,
+			"duration": {
+				"departure": 3600,
+				"return": 0,
+				"total": 3600
+			},
+			"fly_duration": "1h 0m",
+			"flyFrom": "OPO",
+			"cityFrom": "Porto",
+			"cityCodeFrom": "OPO",
+			"countryFrom": {
+				"code": "PT",
+				"name": "Portugal"
+			},
+			"mapIdfrom": "porto_pt",
+			"flyTo": "LIS",
+			"cityTo": "Lisbon",
+			"cityCodeTo": "LIS",
+			"countryTo": {
+				"code": "PT",
+				"name": "Portugal"
+			},
+			"mapIdto": "lisbon_pt",
+			"distance": 276.74,
+			"routes": [
+				[
+					"OPO",
+					"LIS"
+				]
+			],
+			"airlines": [
+				"TP"
+			],
+			"pnr_count": 1,
+			"has_airport_change": false,
+			"technical_stops": 0,
+			"price": 46,
+			"bags_price": {
+				"1": 0.0
+			},
+			"baglimit": {
+				"hand_width": 44,
+				"hand_height": 20,
+				"hand_length": 55,
+				"hand_weight": 8,
+				"hold_width": 52,
+				"hold_height": 28,
+				"hold_length": 78,
+				"hold_dimensions_sum": 158,
+				"hold_weight": 15
+			},
+			"availability": {
+				"seats": null
+			},
+			"facilitated_booking_available": true,
+			"conversion": {
+				"EUR": 46
+			},
+			"quality": 65.99995,
+			"booking_token": "AgI9OSOWoDmEZxQqoy-ortCPWt4oSko4PTzm8EEppMjqJvAEWOuxN-O1uUYZ90L3Jri6a_WmAbo5eUp1u5WGlIyZY2fRo1OOeFrMTHfU5jjyDwD4CxarnC3-syX4RSZjezgD5Ot_QRWosXrVUn4yF-ZdW2gE14L2OYSy5wemDVdqgpTDCjBTkxZ8CmC9KPnYfnx8_jqJSW5LuJORCsbnvaKW24Ou-Qyt5RVsqG_QfAbKxQbTQhUDQnjUhwzFPRmcQ7jgYbs8MFAgFllig53fnRcpKZU-cU5JQfIM_SfOKwxnQR728FaAsk4bnsqjwukx9g_0113C8baw8QZ44Cw3defByj3jQ8tmLBmObcQa2n7dzm6ZVml0fpPBoFMwtHcAOZucMONUj6EN3JDnnCQdnPNI6YNwDvfB-KDbnjXmABW0_oASBfhP8ln2VaeACvM36h6Vn8obnGlYP4qPi1YhVZZ0v7GCvnn03IenaFNBpNE0XhWTSuwGALVApLjspkdMHCfrdIQOfiLWNG_l28vJofR_3vc0EwnKETGiTN4qt4ngyCkIIIZjiwe9jzL-E__kddgFS23itTakVaMRJPXEV1w==",
+			"deep_link": "https:\/\/www.kiwi.com\/deep?from=OPO&to=LIS&departure=19-08-2020&flightsId=093e0358483d0000f61edeac_0&price=46&passengers=1&affilid=picky&lang=en&currency=EUR&booking_token=AgI9OSOWoDmEZxQqoy-ortCPWt4oSko4PTzm8EEppMjqJvAEWOuxN-O1uUYZ90L3Jri6a_WmAbo5eUp1u5WGlIyZY2fRo1OOeFrMTHfU5jjyDwD4CxarnC3-syX4RSZjezgD5Ot_QRWosXrVUn4yF-ZdW2gE14L2OYSy5wemDVdqgpTDCjBTkxZ8CmC9KPnYfnx8_jqJSW5LuJORCsbnvaKW24Ou-Qyt5RVsqG_QfAbKxQbTQhUDQnjUhwzFPRmcQ7jgYbs8MFAgFllig53fnRcpKZU-cU5JQfIM_SfOKwxnQR728FaAsk4bnsqjwukx9g_0113C8baw8QZ44Cw3defByj3jQ8tmLBmObcQa2n7dzm6ZVml0fpPBoFMwtHcAOZucMONUj6EN3JDnnCQdnPNI6YNwDvfB-KDbnjXmABW0_oASBfhP8ln2VaeACvM36h6Vn8obnGlYP4qPi1YhVZZ0v7GCvnn03IenaFNBpNE0XhWTSuwGALVApLjspkdMHCfrdIQOfiLWNG_l28vJofR_3vc0EwnKETGiTN4qt4ngyCkIIIZjiwe9jzL-E__kddgFS23itTakVaMRJPXEV1w==",
+			"tracking_pixel": null,
+			"p1": 1,
+			"p2": 1,
+			"p3": 1,
+			"transfers": [],
+			"type_flights": [
+				"deprecated"
+			],
+			"virtual_interlining": false,
+			"found_on": [
+				"deprecated"
+			],
+			"route": [
+				{
+					"fare_basis": "",
+					"fare_category": "M",
+					"fare_classes": "",
+					"price": 1,
+					"fare_family": "",
+					"found_on": "deprecated",
+					"last_seen": 1592333818,
+					"refresh_timestamp": 1592333818,
+					"source": "deprecated",
+					"return": 0,
+					"bags_recheck_required": false,
+					"guarantee": false,
+					"id": "093e0358483d0000f61edeac_0",
+					"combination_id": "093e0358483d0000f61edeac",
+					"original_return": 0,
+					"aTime": 1597868100,
+					"dTime": 1597864500,
+					"aTimeUTC": 1597864500,
+					"dTimeUTC": 1597860900,
+					"mapIdfrom": "porto_pt",
+					"mapIdto": "lisbon_pt",
+					"cityTo": "Lisbon",
+					"cityFrom": "Porto",
+					"cityCodeFrom": "OPO",
+					"cityCodeTo": "LIS",
+					"flyTo": "LIS",
+					"flyFrom": "OPO",
+					"airline": "TP",
+					"operating_carrier": "WI",
+					"equipment": "AT7",
+					"latFrom": 41.2355556,
+					"lngFrom": -8.6780556,
+					"latTo": 38.7741667,
+					"lngTo": -9.1341667,
+					"flight_no": 2477,
+					"vehicle_type": "aircraft",
+					"operating_flight_no": ""
+				}
+			]
+		}
+	],
+	"connections": [],
+	"time": 1,
+	"currency": "EUR",
+	"currency_rate": 1.0,
+	"fx_rate": 1.0,
+	"refresh": [],
+	"del": 2.278301,
+	"ref_tasks": [],
+	"search_params": {
+		"flyFrom_type": "airport",
+		"to_type": "airport",
+		"seats": {
+			"passengers": 1,
+			"adults": 1,
+			"children": 0,
+			"infants": 0
+		}
+	},
+	"all_stopover_airports": [],
+	"all_airlines": [],
+	"_results": 29
+}
+]]></con:responseContent></con:response></con:restMockAction><con:restMockAction name="/flightError" method="GET" resourcePath="/flightError" id="d9625a36-9b25-4980-9d54-97481ba90c61"><con:settings/><con:defaultResponse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="error" id="e7550b48-1aff-4b1d-a13e-375da74fe698" httpResponseStatus="400" mediaType="application/json"><con:settings/><con:responseContent>{
+  "message": "Here you will be notified of the error that occurred."
+}</con:responseContent></con:response></con:restMockAction></con:restMockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
